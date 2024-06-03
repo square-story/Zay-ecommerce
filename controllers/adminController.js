@@ -4,7 +4,7 @@ const Product = require('../models/product');
 
 exports.adminSignIn = async (req, res) => {
     try {
-        res.render('sign-in')
+        res.render('admin/sign-in')
     } catch (error) {
         console.error(error)
     }

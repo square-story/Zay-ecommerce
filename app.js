@@ -33,16 +33,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/admin', adminRoutes); //for use admin route
-app.use('/user', userRoutes); //for use user route
+app.use('/', userRoutes); //for use user route
 app.use('/product', productRoutes); //for use user route
 
 app.set('view engine', 'ejs'); //set the view engine using ejs
-
-app.get('/', (req, res) => {
-    //for first wanted route is now established
-    //home route
-    res.render('user/home');
-});
 
 const PORT = process.env.PORT || 3000; //port number set
 app.listen(PORT, () => {
