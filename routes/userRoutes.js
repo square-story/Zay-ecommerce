@@ -6,8 +6,7 @@ router.use(express.static('public'))
 
 router.get('/',userController.home)
 router.get('/home',userController.home)
-router.get('/signup', userController.signUpLoader)
-router.get('/signin', userController.signInLoader);
+router.get('/signin', userController.signPageLoader);
 // router.post('/signup', userController.signUp);
 router.post('/signin', userController.signIn);
 router.get('/auth/google', userController.googleSignIn);

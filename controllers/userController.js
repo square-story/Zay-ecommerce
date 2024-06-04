@@ -9,16 +9,9 @@ exports.home = async(req,res)=>{
         console.error(error)
     }
 }
-exports.signUpLoader = async(req, res)=>{
+exports.signPageLoader = async(req, res)=>{
     try {
-        res.render('user/signUp')
-    } catch (error) {
-        console.error(error)
-    }
-}
-exports.signInLoader = async(req, res)=>{
-    try {
-        res.render('user/signIn')
+        res.render('user/signPage')
     } catch (error) {
         console.error(error)
     }
