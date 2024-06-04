@@ -9,8 +9,22 @@ exports.home = async(req,res)=>{
         console.error(error)
     }
 }
+exports.signUpLoader = async(req, res)=>{
+    try {
+        res.render('user/signUp')
+    } catch (error) {
+        console.error(error)
+    }
+}
+exports.signInLoader = async(req, res)=>{
+    try {
+        res.render('user/signIn')
+    } catch (error) {
+        console.error(error)
+    }
+}
 exports.signUp = async (req, res) => {
-    // User sign up logic with OTP
+    
 };
 
 exports.signIn = async (req, res) => {
