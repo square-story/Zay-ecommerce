@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
+
+router.use(express.static('public'))
+
 router.get('/',userController.home)
 router.get('/home',userController.home)
 router.post('/signup', userController.signUp);
